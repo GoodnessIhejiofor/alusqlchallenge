@@ -7,3 +7,12 @@ BEGIN
     SET days_overdue = DATEDIFF(CURDATE(), project_deadline);
     RETURN IF(days_overdue > 0, days_overdue, 0);
 END;
+
+-- Test the function with a sample project deadline
+SELECT 
+    ProjectID,
+    ProjectName,
+    Deadline,
+    DaysOverdue(Deadline) AS DaysOverdue
+FROM 
+    Projects;
