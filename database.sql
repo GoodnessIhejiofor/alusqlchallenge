@@ -1,5 +1,5 @@
 -- Create database
-CREATE DATABASE alu_project DEFAULT CHARACTER SET = 'utf8mb4';
+CREATE DATABASE softwarecompany DEFAULT CHARACTER SET = 'utf8mb4';
 
 -- Created project table
 CREATE TABLE project (
